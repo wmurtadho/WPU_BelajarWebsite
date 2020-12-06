@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Form</title>
+</head>
+<body>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password">
+        <br>
+        <input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria </label>
+        <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
+        <br>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label>
+        <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+        <br>
+        <button type="submit">Kirim!</button>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <select name="" id="">
+            <option value="">Bandung</option>
+            <option value="">Yogyakarta</option>
+            <option value="">Jakarta</option>
+        </select>
+    </form>
+
+    <form action="">
+
+    <table border="0" cellspacing="0" cellpading="5">
+        <tr>
+            <td><label for="text">Text :</label></td>
+            <td><input type="text" id="text"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password :</label></td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="radio" id="radio1" name="radio"><label for="radio1">Radio 1 </label>
+                <input type="radio" id="radio2" name="radio"><label for="radio2">Radio 2</label>
+            </td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="checkbox1"><label for="checkbox1">Checkbox 1</label>
+                <input type="checkbox" id="checkbox2"><label for="checkbox2">Checkbox 2</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Combox Box :</td>
+            <td>
+                <select name="" id="">
+                    <option value="">Option 1</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Textarea:</td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+    
+</body>
+</html>
+
+<!-- 
+    *for dan id harus sama
+    *agar pria dan wanita tidak kepilih keduanya tambahkan atribut name
+ -->

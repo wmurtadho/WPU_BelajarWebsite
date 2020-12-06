@@ -1,0 +1,20 @@
+h1{
+    font-size: 150px;
+    color: aqua;
+    text-align: center;
+
+}
+
+p{
+    color: red;
+    text-align: justify;
+    text-indent: 100px;
+    text-decoration: line-through;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+a{
+    text-decoration: underline;
+    word-spacing: 5px;
+}
