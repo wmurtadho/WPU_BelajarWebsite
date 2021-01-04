@@ -32,6 +32,7 @@ create table mahasiswa (
 
  -- mengupdate data 
  update mahasiswa set jurusan = 'Teknik Industri' where id = 2;
+
  select * from mahasiswa;
 
  -- menghapus tabel
