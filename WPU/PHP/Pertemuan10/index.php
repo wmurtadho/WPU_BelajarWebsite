@@ -2,10 +2,11 @@
 
 require 'functions.php';
 
+// array yang arraynya dibuat sendiri
 $mahasiswa = query("SELECT * FROM mahasiswa");
 
 
- ?>
+?>
 
 
 
@@ -17,6 +18,9 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 <body>
 
 	<h1>Daftar Mahasiswa</h1>
+
+	<a href="tambah.php">Tambah Data Mahasiswa</a>
+	<br><br>
 
 	<table border="1" cellpadding="10" cellspacing="0">
 		
@@ -37,7 +41,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 			<td><?php echo $i; ?></td>
 			<td>
 				<a href="">ubah</a> |
-				<a href="">hapus</a>
+				<a href="hapus.php?id=<?php echo $row["id"]; ?>" onclick="return confirm('yakin?'); " >hapus</a>
 			</td>
 			<td><img src="Image/<?php echo $row["gambar"]; ?>" width="50"></td>
 			<td><?php echo $row["nrp"]; ?></td>
