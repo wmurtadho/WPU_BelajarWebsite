@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require 'functions.php';
 
@@ -14,6 +14,11 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 <html>
 <head>
 	<title>PHP - PHP & Mysql</title>
+	<style media="screen">
+		table{
+			background-color: blue;
+		}
+	</style>
 </head>
 <body>
 
@@ -23,8 +28,11 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 	<br><br>
 
 	<table border="1" cellpadding="10" cellspacing="0">
-		
-		
+
+
+
+
+
 		<tr>
 			<th>No.</th>
 			<th>Aksi</th>
@@ -51,7 +59,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 		</tr>
 		<?php $i++; ?>
 		<?php endforeach; ?>
-	
+
 	</table>
 
 </body>
